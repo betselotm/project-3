@@ -13,6 +13,8 @@
    justify-content: center;
    list-style: none;
    font-size: 30px;
+   letter-spacing: 2px;
+   gap: 30px;
  }
 
  .header-nav ul li{
@@ -133,7 +135,6 @@
   }
  }
      
-
  @media (min-width: 481px) and (max-width: 785px) {
  .about-bg{
   background-size: 100%;
@@ -143,6 +144,75 @@
   align-items: center;
   }
  }
+
+ /* contact body */
+ * {
+    box-sizing: border-box;
+  }
+
+  .contact-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .contact-bg{
+    background-image: url(../img/giz2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    max-width: 100%
+ }
+
+  .contact-info input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #67646b;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .contact-info input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-info [type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .contact-box {
+    border-radius: 5px;
+    background-color:#8c72bb;
+    padding: 10px;
+    max-width: 50%
+  }
+
+  .contact-Us{
+    text-align: center;
+  }
+  
+  .contact-pic:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .contact-textura{
+    height: 170px;
+  }
+  
+  @media screen and (max-width: 600px) {
+  .contact-info, input[type=submit] {
+   width: 100%;
+   margin-top: 0;
+   }
+  }
+  
 
   /* footer */
  .footer{
