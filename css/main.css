@@ -48,8 +48,8 @@
     padding: 10px;
  }
 
- .body-list-img a{
-    
+ .body-list-img img{
+    width: 100%;
  }
  @media (max-width: 480px) {
  .body-img img{
@@ -64,20 +64,84 @@
 
  @media (min-width: 481px) and (max-width: 785px) {
  .body-img img{
-    min-width: 100vh;
+    min-width: 100%;
     }
+
  .body-list-img ol{ 
     display: flex;
     justify-content: flex-start;
     align-items: center;
     }   
-   }
+ }
 
  /* about body */
+ .about-bg{
+    background-image: url(../img/giz2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+ }
  .about-body{
-    width: 100vh;
     display: flex;
     gap: 10px;
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .about-pic {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .about-pic img{
+    width: 50%;
+    border-radius: 50%;
+ }
+
+ .about-desc{
+
+ }
+
+ .about-about{
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 20px;
+ }
+
+ .about-about p{
+    padding: 10px;
+    text-align: justify;
+ }
+
+ .about-about ol{
+    list-style: none;
+    letter-spacing: 2px;
+ }
+
+ @media (max-width: 480px) {
+ .about-bg{
+   background-size: 100vh;
+   min-width: 560px;
+  }
+ .about-pic{
+  display: flex;
+  align-items: center;
+  }
+ }
+     
+
+ @media (min-width: 481px) and (max-width: 785px) {
+ .about-bg{
+  background-size: 100%;
+  } 
+ .about-pic{
+  display: flex;
+  align-items: center;
+  }
  }
 
   /* footer */
