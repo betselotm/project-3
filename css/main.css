@@ -24,6 +24,12 @@
  .header-nav ul li a{
     color: #0b2447;
     text-decoration: none;
+    transition: all .2;
+ }
+ 
+ .header-nav ul li a:hover {
+    color: #dee9f1;
+    text-decoration: underline;
  }
 
  @media (max-width: 480px) {
@@ -199,6 +205,10 @@
     text-decoration: none;
   }
 
+  .work-nav ul li a:hover{
+    color: #a5bcb8;
+  }
+
  @media (max-width: 480px) {
  .work-gallery{
    display: grid;
@@ -303,7 +313,22 @@
     min-width: 100vh;
    }
   }
-  
+
+  .Work-3Dmodeling-img{
+    display: flex;
+    min-width: 100%;
+    height: 100vh;
+  }
+
+  .Work-3Dmodeling-img img{
+    min-width: 100vh;
+    width: 100%;
+  }
+
+  .Work-3Dmodeling-img-disc{
+    font-size: 25px;
+  }
+
 
   /* footer */
  .footer{
