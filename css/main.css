@@ -79,6 +79,7 @@
  @media (max-width: 480px) {
  .body-img img{
     min-width: 100vh;
+    width: 100%;
     }
  .body-list-img ol{ 
     display: grid;
@@ -89,6 +90,7 @@
  @media (min-width: 481px) and (max-width: 785px) {
  .body-img img{
     min-width: 100%;
+    width: 100%;
     }
 
  .body-list-img ol{ 
@@ -297,7 +299,7 @@
   .contact-Me{
     width: 100vh;
   }
-  
+
   .contact-Me p{
     font-size: 40px;
   }
