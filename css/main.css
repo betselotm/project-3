@@ -275,7 +275,7 @@
   
   .contact-box {
     border-radius: 5px;
-    background-color:#8c72bb;
+    background-color:#5b418b;
     padding: 10px;
     max-width: 50%
   }
@@ -293,13 +293,15 @@
   .contact-textura{
     height: 170px;
   }
+
+  .contact-Me{
+    width: 100vh;
+  }
   
-  /* @media screen and (max-width: 600px) {
-  .contact-info, input[type=submit] {
-   width: 100%;
-   margin-top: 0;
-   }
-  } */
+  .contact-Me p{
+    font-size: 40px;
+  }
+  
   @media (max-width: 480px) {
    .contact-page{
     min-width: 100vh;
@@ -407,7 +409,8 @@
  /* media query for phone */
  @media (max-width: 480px) {
   body { 
-   background-color: #2d4356;
+    background-color: #011220;
+    color: lightblue;
  }
   .footer{
     min-width: 100vh;
@@ -417,7 +420,8 @@
    /* media query for tablet */
  @media (min-width: 481px) and (max-width: 785px) {
   body { 
-   background-color: #2d4356;
+    background-color: #011220;
+    color: lightblue;
  }
  .footer{
     min-width: 100vh;
@@ -427,6 +431,7 @@
     /* media query for desktop */
  @media (min-width: 786px) {
   body { 
-   background-color: #2d4356;
+   background-color: #011220;
+   color: lightblue;
  }
  }
