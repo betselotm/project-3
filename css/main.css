@@ -73,7 +73,8 @@
  }
 
  .body-list-img img{
-    width: 100%;
+    max-width: 100%;
+    width: 100vh;
  }
  @media (max-width: 480px) {
  .body-img img{
@@ -98,7 +99,7 @@
 
  /* about body */
  .about-bg{
-    background-image: url(../img/giz2.jpg);
+    background-image: url(../img/Aboutbg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 100vh;
@@ -183,6 +184,7 @@
 
  .work-gallery img{
    min-width: 100%;
+   width: 100%;
  }
 
  .work-nav{
@@ -243,7 +245,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/giz2.jpg);
+    background-image: url(../img/ContactBg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 100vh;
