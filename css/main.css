@@ -3,10 +3,46 @@
  margin: 0;
  padding: 0;
  }
+
+ /* Changes for my Final Project
+  smooth scroll
+ do all the pics and their description
+ put a next and a back on each description 
+ put a bar for phone responsive
+ add a carosaoul somewhere or some interctive
+ change the colors
+ make the header background invisible
+ add logo on header and main page
+ change the layout in the work folder for extra pazaz
+ put mu email in the footer or in the submit
+ make the pic on the main page a video instaead
+ optimize the images and videos
+ link the submit button to my email
+ put a description when hovering on images
+ put an underline of the page ur on
+ use lighthouse to improve website
+ change title and description
+ maybe put different font style
+ make sure nothing touches the edges
+ remove sculpture tab
+ images should not be bigger than 225kb
+ put wrappers so it dont touch the edges
+ post videos on yt and then inbed them in 
+ use mp4 fror video*/
+
+ /* apply for a design jobs that you dont think you qualify for */
  /* header */
  .headerr{
-   background-color: #84a7a1;
-   min-width: 100vh;
+   background-color: #011310;
+   min-width: 100vW;
+   display: flex;
+   justify-content: space-between;
+   padding-left: 10px;
+   padding-right: 10px
+ }
+
+ .header-logo img{
+  width: 100px;
  }
 
  .header-nav ul{
@@ -22,7 +58,7 @@
    padding: 10px;
  }
  .header-nav ul li a{
-    color: #0b2447;
+    color: #ee3663;;
     text-decoration: none;
     transition: all .2;
  }
@@ -48,6 +84,34 @@
  }
 
  /* index body */
+ .body-video {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.body-video video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.body-video .body-videocaption {
+  z-index: 1;
+  position: relative;
+  color: #03d738;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 27px;
+  font-family: math;
+  letter-spacing: 6px;
+}
+
  .body-img{
     width: 100%;
     height: 100vh;
@@ -72,6 +136,10 @@
     padding: 10px;
  }
 
+ .body-list-img ol li:hover{
+  opacity: 46%;
+ }
+
  .body-list-img img{
     max-width: 100%;
     width: 100vh;
@@ -89,7 +157,7 @@
 
  @media (min-width: 481px) and (max-width: 785px) {
  .body-img img{
-    min-width: 100%;
+    min-width: 100vh;
     width: 100%;
     }
 
@@ -101,7 +169,7 @@
 
  /* about body */
  .about-bg{
-    background-image: url(../img/Aboutbg.jpg);
+    background-image: url(../img/Painting/Aboutbg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 100vh;
@@ -112,6 +180,7 @@
     gap: 10px;
     padding: 1px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
  }
 
  .about-pic {
@@ -128,19 +197,19 @@
  }
 
  .about-desc{
- text-align: center;
+   text-align: center;
  }
 
  .about-about{
     width: 100%;
     letter-spacing: 1px;
     font-size: 20px;
-    min-width: 100vh;
+    min-width: 100vW;
  }
 
  .about-about p{
     padding: 10px;
-    min-width: 100vh;
+    min-width: 100vW;
  }
 
  .about-about ol{
@@ -151,7 +220,7 @@
  @media (max-width: 480px) {
  .about-bg{
    background-size: 100vh;
-   min-width: 560px;
+   min-width: 100vh;
   }
  .about-pic{
   display: flex;
@@ -166,6 +235,7 @@
  @media (min-width: 481px) and (max-width: 785px) {
  .about-bg{
   background-size: 100%;
+  min-width: 100vh;
   } 
  .about-pic{
   display: flex;
@@ -182,6 +252,7 @@
   grid-template-columns: repeat(3,1fr);
   column-gap: 10px;
   row-gap: 10px;
+  padding: 10px;
  }
 
  .work-gallery img{
@@ -247,12 +318,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/ContactBg.jpg);
+    background-image: linear-gradient(to right,rgb(26 25 32 / 60%),rgb(44 32 43 / 60%)), url(../img/Painting/ContactBg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 100vh;
-    max-width: 100%
- }
+    max-width: 100%;
+  }
 
   .contact-info input[type=text], select, textarea {
     width: 100%;
@@ -279,7 +350,7 @@
     border-radius: 5px;
     background-color:#5b418b;
     padding: 10px;
-    max-width: 50%
+    max-width: 60%
   }
 
   .contact-Us{
@@ -302,6 +373,14 @@
 
   .contact-Me p{
     font-size: 40px;
+  }
+
+  .contact-submit{
+    width: 100vw;
+    color: #0f0f49;
+    border-radius: 5px;
+    background-color: #a981f3;
+    padding: 10px;
   }
   
   @media (max-width: 480px) {
@@ -339,8 +418,8 @@
   /* footer */
  .footer{
    padding-bottom: 1px;
-   background-color: #0e2954;
-   width: 100%;
+   background-color: #051125;
+   min-width: 100VW;
    position: sticky;
    top: 100%;
  }
