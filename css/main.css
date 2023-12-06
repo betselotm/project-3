@@ -5,30 +5,23 @@
  }
 
  /* Changes for my Final Project
-  smooth scroll
- do all the pics and their description
- put a next and a back on each description 
+ smooth scroll
+    do all the pics and their description
+    put a next and a back on each description 
  put a bar for phone responsive
- add a carosaoul somewhere or some interctive
- change the colors
- make the header background invisible
- add logo on header and main page
- change the layout in the work folder for extra pazaz
- put mu email in the footer or in the submit
- make the pic on the main page a video instaead
- optimize the images and videos
- link the submit button to my email
+    change the colors
+    add logo on header and main page
+    put mu email in the footer or in the submit
+    make the pic on the main page a video instaead
+    optimize the images and videos
  put a description when hovering on images
  put an underline of the page ur on
- use lighthouse to improve website
+    use lighthouse to improve website
  change title and description
- maybe put different font style
- make sure nothing touches the edges
- remove sculpture tab
- images should not be bigger than 225kb
- put wrappers so it dont touch the edges
- post videos on yt and then inbed them in 
- use mp4 fror video*/
+    remove sculpture tab
+    images should not be bigger than 225kb
+    put wrappers so it dont touch the edges
+    use mp4 for video*/ 
 
  /* apply for a design jobs that you dont think you qualify for */
  /* header */
@@ -52,6 +45,7 @@
    font-size: 30px;
    letter-spacing: 2px;
    gap: 30px;
+   padding-right: 20px;
  }
 
  .header-nav ul li{
@@ -81,6 +75,24 @@
    .header-nav ul{
     width: 100%;
    }
+ }
+
+ /* next-Previous */
+ .preiv-next{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 25px;
+ }
+
+ .preiv-next a{
+  border-radius: 3px;
+  background-color: #3a9aa6;
+  color: #073f0a;
+ }
+
+ .preiv-next a:hover{
+  color: #ffffff;
  }
 
  /* index body */
@@ -276,12 +288,12 @@
     padding: 10px;
   }
   .work-nav ul li a{
-    color: #c6d7f0;
+    color: #f4beff;
     text-decoration: none;
   }
 
   .work-nav ul li a:hover{
-    color: #a5bcb8;
+    color: #beebe3;
   }
 
  @media (max-width: 480px) {
@@ -335,7 +347,7 @@
   }
   
   .contact-info input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #04aa1d;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -343,12 +355,12 @@
   }
   
   .contact-info [type=submit]:hover {
-    background-color: #45a049;
+    background-color: #10c118;
   }
   
   .contact-box {
     border-radius: 5px;
-    background-color:#5b418b;
+    background-color:#043606;
     padding: 10px;
     max-width: 60%
   }
@@ -414,6 +426,20 @@
     font-size: 25px;
   }
 
+  .Work-3Dmodeling-vid {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  .Work-3Dmodeling-vid video{
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
 
   /* footer */
  .footer{
