@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Responsive Layouts</title>
-  <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
+  <title>Betselot Mulugeta</title>
+  <meta name="description" content="Betselot Mulugeta, betsy, Bm potfolio, betselot portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -15,6 +15,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -28,14 +29,29 @@
     <div class="header-logo">
       <img src="./img/HomeLogo.png" alt="">
     </div>
+
+    <!-- <button class="header-phone"
+     aria-controls="header-navigation" aria-expanded="false">
+     <span class="header-btton">Menu</span>
+    </button> -->
+
     <nav class="header-nav">
-      <ul>
+      <ul id="header-navigation">
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbuttn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="navi"></label>
+
         <li><a href="./index.html">Home</a></li>
         <li><a href="./Work.html">Work</a></li>
         <li><a href="./About.html">About</a></li>
         <li><a href="./Contact.html">Contact</a></li>
-        <li><a href="http://"></a></li>
       </ul>
+
+     
+      
     </nav>
   </header>
 
@@ -49,13 +65,74 @@
         </ul>
       </nav>
     </div>
+
     <div class="work-gallery">
-      <a href="./Work-3Dmodeling-pic1.html"> <img src="./img/3D-Model/3D-model.png" alt=""></a>
-      <a href="./Work-3Dmodeling-pic2.html"> <img src="./img/3D-Model/3D-model2.png" alt=""></a>
-      <a href="./Work-3Dmodeling-pic3.html"> <img src="./img/3D-Model/3D-model3.png" alt=""></a>
-      <a href="./Work-3Dmodeling-pic4.html"> <img src="./img/3D-Model/3D-model4.jpg" alt=""></a>
-      <a href="./Work-3Dmodeling-pic5.html"> <img src="./img/3D-Model/3D-model5.png" alt=""></a>
-      <a href="./Work-3Dmodeling-pic6.html"> <img src="./img/3D-Model/3D-model6.png" alt=""></a>
+
+      <div class="Work-Image">
+        <div class="Shadow-title">
+          <a href="./Work-3Dmodeling-pic1.html">  
+          <img src="./img/3D-Model/3D-model.png" alt=""></a>
+           <div class="Shadow-content">
+            <h1>Macrons</h1>
+            <h2>3D-Model: Blender</h2>
+           </div>
+        </div> 
+      </div>
+
+      <div class="Work-Image">
+        <div class="Shadow-title">
+         <a href="./Work-3Dmodeling-pic2.html"> 
+         <img src="./img/3D-Model/3D-model2.png" alt=""></a>
+          <div class="Shadow-content">
+           <h1>Donuts</h1>
+           <h2>3D-Model: Blender</h2>
+          </div>
+        </div> 
+      </div>
+
+      <div class="Work-Image">
+        <div class="Shadow-title">
+         <a href="./Work-3Dmodeling-pic3.html">
+         <img src="./img/3D-Model/3D-model3.png" alt=""></a>
+          <div class="Shadow-content">
+           <h1>Pumpkin</h1>
+           <h2>3D-Model: Zbrush</h2>
+          </div>
+        </div> 
+      </div>
+
+      <div class="Work-Image">
+        <div class="Shadow-title">
+          <a href="./Work-3Dmodeling-pic4.html"> 
+          <img src="./img/3D-Model/3D-model4.jpg" alt=""></a>
+           <div class="Shadow-content">
+            <h1>Isometric Room</h1>
+             <h2>3D-Model: Maya</h2>
+           </div>
+        </div> 
+      </div>
+
+      <div class="Work-Image">
+        <div class="Shadow-title">
+          <a href="./Work-3Dmodeling-pic5.html">
+          <img src="./img/3D-Model/3D-model5.png" alt=""></a>
+           <div class="Shadow-content">
+            <h1>Shinjuku</h1>
+            <h2>3D-Model: Unreal Engine</h2>
+           </div>
+        </div> 
+      </div>
+
+      <div class="Work-Image">
+        <div class="Shadow-title">
+         <a href="./Work-3Dmodeling-pic6.html">
+         <img src="./img/3D-Model/3D-model6.png" alt=""></a>
+          <div class="Shadow-content">
+           <h1>Lollipop</h1>
+           <h2>3D-Model: Blender</h2>
+          </div>
+        </div> 
+      </div>
   </main>
 
   <footer>

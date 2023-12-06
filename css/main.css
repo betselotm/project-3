@@ -15,9 +15,8 @@
     make the pic on the main page a video instaead
     optimize the images and videos
  put a description when hovering on images
- put an underline of the page ur on
     use lighthouse to improve website
- change title and description
+    change title and description
     remove sculpture tab
     images should not be bigger than 225kb
     put wrappers so it dont touch the edges
@@ -36,6 +35,10 @@
 
  .header-logo img{
   width: 100px;
+ }
+
+ .header-nav{
+  display: flex;
  }
 
  .header-nav ul{
@@ -62,10 +65,84 @@
     text-decoration: underline;
  }
 
+ .checkbuttn{
+  font-size: 40px;
+  color: #03d738;
+  float: right;
+  line-height: 68px;
+  margin-right: 50px;
+  cursor: pointer;
+  display: none;
+ }
+
+ #check{
+  display: none;
+ }
+
+ /* .header-phone{
+  display: none;
+} */
+
  @media (max-width: 480px) {
   .headerr{
     min-width: 100vh;
   }
+
+  .checkbuttn{
+    display: block;
+   }
+
+  .header-nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    background: hsl(0 0% 0% / 0.4);
+    backdrop-filter: blur(50px);
+    inset: 0 0 0 10%;
+    top: 80px;
+    left: -100%;
+    flex-direction: column;
+    padding: 20px 45px;
+    gap: 50px;
+    transition: all .5s;
+  }
+
+  .header-nav ul li{
+    display: block;
+   }
+  /* .header-phone{
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    width: 13rem;
+    aspect-ratio: 1;
+    background: url(../img/hamburger-menu-icon.png);
+    background-repeat: no-repeat;
+    border: 0;
+    top: 2rem;
+    right: -26rem;
+  } */
+
+   label.navi{
+    font-size: 30px;
+    color: #3a9aa6;
+    padding: 0px 109px;
+    font-weight: bold;
+   }
+
+   .header-nav ul li a{
+    font-size: 35px;
+   }
+
+   .header-nav ul li a:hover{
+    color: #a981f3;
+   }
+
+   #check:checked ~ ul{
+    left: 0;
+   }
+  
  }
         
  @media (min-width: 481px) and (max-width: 785px) {
@@ -74,7 +151,10 @@
    }
    .header-nav ul{
     width: 100%;
+
    }
+
+
  }
 
  /* next-Previous */
@@ -95,9 +175,21 @@
   color: #ffffff;
  }
 
+ @media (max-width: 480px) {
+  .preiv-next {
+    min-width: 100vh;
+  }
+ }
+        
+ @media (min-width: 481px) and (max-width: 785px) {
+  .preiv-next {
+   min-width: 100vh
+  }
+ }
+
  /* index body */
  .body-video {
-  width: 100%;
+  min-width: 100vh;
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -411,6 +503,40 @@
    }
   }
 
+  .Work-Image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Shadow-title{
+    position: relative;
+  }
+  .Shadow-title img{
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .Shadow-content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .Shadow-content:hover{
+    opacity: 1;
+  }
+
   .Work-3Dmodeling-img{
     display: flex;
     min-width: 100%;
@@ -427,7 +553,7 @@
   }
 
   .Work-3Dmodeling-vid {
-    width: 100%;
+    min-width: 100vh;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -538,7 +664,33 @@
     /* media query for desktop */
  @media (min-width: 786px) {
   body { 
-   background-color: #011220;
+   background-color: #020a11;
    color: lightblue;
  }
+ .headerr{
+  min-width: 100vh;
+}
+.header-nav ul{
+  font-size: 35px;
+}
+ .preiv-next {
+  min-width: 100vh
+ }
+ .about-bg{
+  min-width: 100vh;
+ }
+ .contact-page{
+  min-width: 100vh;
+ }
+ .work-nav{
+  min-width: 100vh;
+ }
+ .work-nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 40px;
+ }
+ .footer{
+  min-width: 100vh;
+}
  }
