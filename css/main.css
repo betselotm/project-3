@@ -278,7 +278,7 @@
  @media (max-width: 480px) {
  .about-bg{
    background-size: 100vh;
-   min-width: 100vh;
+   min-width: 100vw;
   }
  .about-pic{
   display: flex;
@@ -293,7 +293,7 @@
  @media (min-width: 481px) and (max-width: 785px) {
  .about-bg{
   background-size: 100%;
-  min-width: 100vh;
+  min-width: 100vw;
   } 
  .about-pic{
   display: flex;
@@ -631,7 +631,7 @@
   min-width: 100vh
  }
  .about-bg{
-  min-width: 100vh;
+  min-width: 100vw;
  }
  .contact-page{
   min-width: 100vh;
